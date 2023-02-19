@@ -18,6 +18,10 @@ html *{
     max-width: 1024px;
     background: rgb(104, 95, 95);
 }
+
+.parent_container p{
+    text-align: center;
+}
 .name_info{
     padding: 20px;
 }
