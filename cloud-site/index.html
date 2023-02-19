@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        fetch('https://e0jn3s5wx8.execute-api.us-east-1.amazonaws.com/dev')
+            .then(response => response.json())
+            .then((data) => {
+                document.getElementById("counter").innerText = data.body;
+            })
+    </script>
     <link rel="stylesheet" href="styles.css" media="all">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +26,13 @@
                 <h1 class="name">Tahasin Zaman</h1>
                 <h2 class="title">Information Technology Professional&nbsp;&nbsp;|&nbsp; Cloud</h2>
                 <h3 class="contact_information">Hicksvile, NY&nbsp;&nbsp;|&nbsp;tahasinzaman98@gmail.com</h3>
-
+                <div class="counter_text">
+                <p>
+                    You are Visitor # 
+                    <span id="counter" />
+                </p>
+                    
+                </div>
             </div>
         </div>
 
@@ -100,5 +113,7 @@
     <div data-iframe-width="250" data-iframe-height="270" data-share-badge-id="420bf11c-1d93-4f62-a82d-66d909c41e40" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
         
     </div>
+    
+    
 </body>
 </html>
