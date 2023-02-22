@@ -1,0 +1,30 @@
+name: Deploy FrontEnd to S3 and invalidate CloudFront
+
+on:
+  push:
+    branchs:
+    - master
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      -name: checkout
+        uses: actions/checkout@master
+
+      -name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::179830444787:role/gitHub-actions-role
+          role-session-name: github-actions
+
+      -name: copy files to S3 bucket
+      run: |
+        aws s3 sync . s3://tayztech.com
+
+# Job to configure cloudFront will be added later. 
