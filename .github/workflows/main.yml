@@ -24,7 +24,6 @@ jobs:
           role-session-name: github-actions
 
       - name: copy files to S3 bucket
-        run: |
-        aws s3 sync . s3://tayztech.com
+        run: aws s3 sync . s3://tayztech.com
 
 # Job to configure cloudFront will be added later. 
