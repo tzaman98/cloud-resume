@@ -3,7 +3,7 @@ name: Deploy FrontEnd to S3 and invalidate CloudFront
 on:
   push:
     branchs:
-    - master
+    - main
 
 
 jobs:
