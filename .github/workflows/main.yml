@@ -14,14 +14,14 @@ jobs:
       contents: read
     steps:
       -name: checkout
-        uses: actions/checkout@master
+      uses: actions/checkout@master
 
       -name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-region: us-east-1
-          role-to-assume: arn:aws:iam::179830444787:role/gitHub-actions-role
-          role-session-name: github-actions
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-region: us-east-1
+        role-to-assume: arn:aws:iam::179830444787:role/gitHub-actions-role
+        role-session-name: github-actions
 
       -name: copy files to S3 bucket
       run: |
