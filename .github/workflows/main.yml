@@ -20,7 +20,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-region: us-east-1
-          role-to-assume: arn:aws:iam::179830444787:role/gitHub-actions-role
+          role-to-assume: ${{ secrets.PROD_DEPLOY_ROLE }}
           role-session-name: github-actions
 
       - name: copy files to S3 bucket
