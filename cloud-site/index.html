@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <script>
-        fetch('https://e0jn3s5wx8.execute-api.us-east-1.amazonaws.com/dev')
+        fetch('https://1r6lt714od.execute-api.us-east-1.amazonaws.com/dev/GET')
             .then(response => response.json())
             .then((data) => {
                 document.getElementById("counter").innerText = data.body;
@@ -49,9 +49,9 @@
                             <h1 class="job_title">NOC Engineer <span class='company'>| Ricoh USA&nbsp;&nbsp;(April 2020 - February 2023)</span></h1>
                             <h2 class="job_description">- Responsible for troubleshooting network and server issues and ensuring stability utilizing ServiceNow, LogicMonitor, and Kaseya.</h2>
                             <h2 class="job_description">- Created knowledge base articles for Cisco equipment, VMware ESXi environments, and networks in ServiceNow.</h2>
-                            <h2 class="job_description">- Deployed PowerShell/cmd scripts onto Windows Servers to increase disk space, reduce CPU and RAM usage, and maintain Windows Active Directory group rights .</h2>
+                            <h2 class="job_description">- Deployed PowerShell/cmd scripts onto Windows Servers to increase disk space, reduce CPU and RAM usage, and maintain Windows Active Directory group rights.</h2>
                             <h2 class="job_description">- Troubleshot networking issues related to BGP, EIGRP, SNMP, DNS, on Cisco equipment and load balancers.</h2>
-                            <h2 class="job_description">- Created tickets with Internet Service Providers (ISPs) to act as a liaison for issues with client WAN and MPLS circuit .</h2>
+                            <h2 class="job_description">- Created tickets with Internet Service Providers (ISPs) to act as a liaison for issues with client WAN and MPLS circuit.</h2>
                         </div>
 
                         <div class="job">
@@ -87,6 +87,14 @@
                 <div class="project_header">
                     <h1>Projects</h1>
                 </div>
+                <div class="project_title">
+                    <h1 class="project_title">Cloud Resume Challenge <span class='project_date'>| March 2023</span></h1>
+                    <h2 class="project_description">Created a static website to host my resume based on <a href="https://cloudresumechallenge.dev/docs/the-challenge/" target="_blank">The Cloud Resume Challenge by Forrest Brazeal</a> utilizing Amazon Web Services (AWS). </h2>
+                    <h2 class="project_description">Front-end created by using an S3 bucket deployed as a static website, Amazon CloudFront and Amazon Certificate Manager (ACM) for content distribution and TLS/SSL, and Route 53 for domain registration and DNS. </h2>
+                    <h2 class="project_description">Uses a cloud-based API created in AWS API Gateway that returns the website's visitor counter from DynamoDB using an AWS Lambda function written in Python. </h2>
+                    <h2 class="project_description"> Utilized Terraform cloud to deploy the DynamoDB table, Lambda function, and API Gateway as Infrastructure as Code (IaC). </h2>
+                    <h2 class="project_description"> Created a CI/CD pipeline with GitHub Actions to update the website's S3 bucket and invalidate CloudFront distribution whenever a change is pushed to the main branch.</h2>
+                </div>
             </div>
         </div>
     
@@ -102,6 +110,9 @@
             <h1>Windows Server 2012-2022</h1>
             <h1>Python</h1>
             <h1>Boto3</h1>
+            <h1>Terraform</h1>
+            <h1>Git | Github Actions</h1>
+            <h1>CI/CD</h1>
             <h1>Linux</h1>
             <h1>bash</h1>
           </div>
