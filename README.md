@@ -3,7 +3,7 @@ This repository hosts the front-end of my version of the [Cloud Resume Challenge
 ## Application Architecture
 Here is a diagram I created that shows the resources utilized in this project:
 
-![Application Diagram](https://github.com/tzaman98/cloud-resume/blob/main/cloud%20resume%20challenge%20diagram.PNG)
+![Application Diagram](https://github.com/tzaman98/cloud-resume/blob/main/cloud%20resume%20challenge%20diagram%202.PNG)
 
 The project is a simple static website that utilizes AWS S3 to host the website's resources, which is simple HTML and CSS. After configuring the S3 bucket as a static website, I created a CloudFront distribution that uses the S3 bucket as an origin and used Amazon Certificate Manager to create an SSL certificate for the distribution. I then pointed the domain name (tayztech.com) which I purchased through Route 53 to the CloudFront distribution using Route 53 hosted zone. 
 
