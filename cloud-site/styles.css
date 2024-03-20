@@ -80,6 +80,7 @@ html *{
 }
 .project_date{
     font-size: 15px;
+    font-style: italic;
 }
 .job_experience{
     padding: 20px;
